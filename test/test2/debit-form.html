@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="debit.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dettagli pagamento</h1>
+        <h3>Tipologia di carta</h3>
+        <div class="card">
+            <div class="card1">
+                <input type="radio" name="payment-method" id="visa" value="visa" required>            
+                <img src="visa.png" alt="none" class="img">
+            </div>
+            <div class="card1">
+                <input type="radio" name="payment-method" id="money" value="money" required>            
+                <img src="money.png" alt="none" class="img">
+            </div>
+            <div class="card1">
+                <input type="radio" name="payment-method" id="paypal" value="paypal" required>            
+                <img src="paypal.png" alt="none" class="img">
+            </div>
+        </div>
+        <div class="form">
+            <h5>Titolare della carta</h5>
+            <input type="text" id="card-holder" class="input" required>
+            <h5>Numero carta di cretio</h5>
+            <input type="text" id="card-number" class="input" required>
+            <div class="cvv">
+                <div class="field">
+                    <h5>Data scadenza</h5>
+                    <input type="text" id="expiry-date" class="input" required>
+                </div>
+                <div class="field2">
+                    <h5>CVV</h5>
+                    <input type="password" id="cvv" class="input" required>
+                </div>
+            </div>
+        </div>
+        <div class="check">
+            <input type="checkbox" name="save-info" id="save-info">
+            <h5>Salva informazioni per il futuro</h5>
+        </div>
+        <button class="button" id="pay">Paga ora</button>
+    </div>
+<script src="debit.js"></script>
+</body>
+</html>
